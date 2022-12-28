@@ -15,3 +15,6 @@ panic = "abort" #by default it is usually "unwind"
 [profile.release]
 panic = "abort" #by default it is usually "unwind"
 
+[unstable]
+build-std = ["core", "compiler-builtins"]
+
