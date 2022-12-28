@@ -1,0 +1,10 @@
+
+
+
+
+[unstable]
+build-std = ["core", "compiler-builtins"]
+# This tells cargo that it should recompile the core and compiler_builtins libraries. 
+# "compiler-builtins" is required because it is a dependency of core. 
+# In order to recompile these libraries, cargo needs access to the rust source code, 
+# which we can install with rustup component add rust-src.
